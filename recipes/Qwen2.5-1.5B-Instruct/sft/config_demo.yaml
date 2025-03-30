@@ -1,4 +1,5 @@
 # Model arguments
+#model_name_or_path: llm-jp/llm-jp-3-3.7b-instruct
 model_name_or_path: Qwen/Qwen2.5-1.5B-Instruct
 model_revision: main
 torch_dtype: bfloat16
@@ -16,6 +17,7 @@ gradient_accumulation_steps: 1
 gradient_checkpointing: true
 gradient_checkpointing_kwargs:
   use_reentrant: false
+#hub_model_id: llm-jp-3-3.7b-Open-R1-Distill
 hub_model_id: Qwen2.5-1.5B-Open-R1-Distill
 hub_strategy: every_save
 learning_rate: 5.0e-05
@@ -29,6 +31,7 @@ packing: true
 max_length: 16384
 max_steps: -1
 num_train_epochs: 1
+#output_dir: data/llm-jp-3-3.7b-Open-R1-Distill
 output_dir: data/Qwen2.5-1.5B-Open-R1-Distill
 overwrite_output_dir: true
 per_device_eval_batch_size: 16
